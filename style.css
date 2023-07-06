@@ -1,0 +1,52 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+button{
+    background-color: burlywood;
+    color: white;
+    padding: 20px 20px;
+    border: 5px solid black;
+    border-radius: 20px;
+    transition: all 500ms;
+}
+
+button.hover{
+    background-color: yellow;
+    color: white;
+    transform:rotate(-360deg);
+    box-shadow: 10px 10px 20px green;
+}
+
+.loop{
+    animation: loop 1s infinite;
+}
+
+@keyframes loop {
+    100%{
+        transform:rotate(-360deg);
+    }
+}
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-image: url("./kitten-nap.gif");
+    background-size: cover;
+    animation: cuadrado 2s;
+}
+
+@keyframes cuadrado{
+    50%{
+        transform: rotate(45deg);
+    }
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
